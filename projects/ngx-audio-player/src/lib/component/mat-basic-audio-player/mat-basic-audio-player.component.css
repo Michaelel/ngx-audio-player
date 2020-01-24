@@ -11,3 +11,7 @@ button:hover, button:focus {
 .ngx-basic-audio-player {
     min-width: 300px;
 }
+
+audio {
+    display: none !important;
+}

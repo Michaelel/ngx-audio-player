@@ -1,5 +1,7 @@
 <mat-card class="d-flex ngx-basic-audio-player">
-    <audio [src]="audioUrl" #audioPlayer></audio>
+    <audio #audioPlayer>
+        <source [src]="audioUrl" type="audio/mp3">
+    </audio>
     <button mat-button (click)='playBtnHandler();' class="ngx-basic-audio-player-button-handler"
         style="font-size: 14px!important;" [disabled]="loaderDisplay">
         <fa-icon *ngIf="loaderDisplay" title="loading..." class="fa fa-lg loading-track" [pulse]="true"
